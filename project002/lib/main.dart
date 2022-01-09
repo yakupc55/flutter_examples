@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 
-void main(List<String> args) {
-  runApp(const MaterialApp(
-    home: HomePage(),
-  ));
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Material App',
+        home: HomePage());
+  }
 }
 
 class HomePage extends StatelessWidget {
@@ -15,28 +23,19 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hello World"),
-      ),
-      floatingActionButton:
-          FloatingActionButton(onPressed: () {}, child: Icon(Icons.swap_calls)),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              width: 100.0,
-              height: 100,
-              color: Colors.red,
-            ),
-            SizedBox(
-              height: 50.0,
-            ),
-            FlutterLogo(size: 100),
-          ],
+        backgroundColor: Colors.black,
+        elevation: 4,
+        centerTitle: true,
+        title: const Text("Uber"),
+        leading: Container(
+          child: const Text(
+            "B",
+            style: TextStyle(color: Colors.black),
+          ),
+          color: Colors.white,
         ),
       ),
-      backgroundColor: Colors.black,
+      body: Column(),
     );
   }
 }
