@@ -7,4 +7,8 @@ class AppTextContants {
   static const programmingLanguageSecond = 'Swifth';
   static const programmingLanguageThirdth = 'Dart';
   static const programmingLanguage = 'Dart';
+  static const buttonGoToTestPage1 = "show test page1";
+  static const appBarTestPage1 = "Test Page 1";
+  static const buttonGoToTestPage2 = " Show test page 2";
+  static const appBarTestPage2 = "Test Page 2";
 }

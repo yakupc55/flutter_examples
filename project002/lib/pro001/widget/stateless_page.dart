@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project002/pro001/widget/contants/app_color_contansts.dart';
-import 'package:project002/pro001/widget/contants/app_text_contansts.dart';
+import 'package:project002/pro001/contants/app_color_contansts.dart';
+import 'package:project002/pro001/contants/app_text_contansts.dart';
 import 'package:kartal/kartal.dart';
 
 class StatelessPAge extends StatelessWidget {

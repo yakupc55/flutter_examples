@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:project002/pro001/widget/contants/app_color_contansts.dart';
-import 'package:project002/pro001/widget/contants/app_text_contansts.dart';
+import 'package:project002/pro001/contants/app_color_contansts.dart';
+import 'package:project002/pro001/contants/app_text_contansts.dart';
 import 'package:project002/pro001/widget/stateless_page.dart';
+import 'package:project002/pro001/widget/test_widget_page1.dart';
+import 'package:project002/pro001/widget/test_widget_page2.dart';
 
 class StatefulWidgetPage extends StatefulWidget {
   const StatefulWidgetPage({Key? key}) : super(key: key);
@@ -43,7 +45,23 @@ class _StatefulWidgetPageState extends State<StatefulWidgetPage> {
                     MaterialPageRoute(
                         builder: (context) => const StatelessPAge()));
               },
-              child: const Text(AppTextContants.buttonNextPage))
+              child: const Text(AppTextContants.buttonNextPage)),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const TestWidgetPage1()));
+              },
+              child: const Text(AppTextContants.buttonGoToTestPage1)),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const TestWidgetPage2()));
+              },
+              child: const Text(AppTextContants.buttonGoToTestPage2))
         ],
       ),
     );
