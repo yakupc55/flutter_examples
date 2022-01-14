@@ -11,4 +11,6 @@ class AppTextContants {
   static const appBarTestPage1 = "Test Page 1";
   static const buttonGoToTestPage2 = " Show test page 2";
   static const appBarTestPage2 = "Test Page 2";
+  static const buttonGoToTestPage3 = " Show test page 3";
+  static const appBarTestPage3 = "Test Page 3";
 }
