@@ -15,7 +15,7 @@ class TestWidgetPage1 extends StatelessWidget {
       routes: {
         '/test1': (context) => const TestRoutePage1(),
         '/test2': (context) => const TestRoutePage2(),
-        '/test3': (context) => const TestRoutePage3()
+        '/test3': (context) => const TestRoutePage3(),
       },
     );
   }
