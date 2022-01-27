@@ -19,20 +19,17 @@ class TestRoutePage1 extends StatelessWidget {
                 Navigator.of(context)
                     .pushNamedAndRemoveUntil('/test2', (route) => false);
               },
-              child: const Text("Show Test Route Page 2"),
+              child: const Text("show route test page 2"),
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.amber),
-                  elevation: MaterialStateProperty.all(8)),
+                  backgroundColor: MaterialStateProperty.all(Colors.amber)),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context)
                     .pushNamedAndRemoveUntil('/test3', (route) => false);
               },
-              child: const Text("Show Test Route Page 3"),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.blueAccent),
-                  elevation: MaterialStateProperty.all(12)),
+              child: const Text("show route test page 3"),
+              style: ButtonStyle(elevation: MaterialStateProperty.all(8)),
             )
           ],
         ),

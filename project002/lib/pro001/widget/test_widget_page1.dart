@@ -13,9 +13,9 @@ class TestWidgetPage1 extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/test1',
       routes: {
-        '/test1': (context) => const TestRoutePage1(),
-        '/test2': (context) => const TestRoutePage2(),
-        '/test3': (context) => const TestRoutePage3(),
+        '/test1': (context) => TestRoutePage1(),
+        '/test2': (context) => TestRoutePage2(),
+        '/test3': (context) => TestRoutePage3()
       },
     );
   }

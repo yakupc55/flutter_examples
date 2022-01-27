@@ -8,35 +8,29 @@ class TestRoutePage2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("Test Route Page 2"),
+        title: const Text("Test Route Page2"),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context)
-                    .pushNamedAndRemoveUntil('/test1', (route) => false);
-              },
-              child: const Text("Show Test Route Page 1"),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.brown),
-                  elevation: MaterialStateProperty.all(20)),
-            ),
-            ElevatedButton(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context)
+                  .pushNamedAndRemoveUntil('/test1', (route) => false);
+            },
+            child: const Text("show route test page 1"),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.brown)),
+          ),
+          ElevatedButton(
               onPressed: () {
                 Navigator.of(context)
                     .pushNamedAndRemoveUntil('/test3', (route) => false);
               },
-              child: const Text("Show Test Route Page 3"),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.lightGreen),
-                  elevation: MaterialStateProperty.all(15)),
-            )
-          ],
-        ),
-      ),
+              child: const Text("show route test page 3"))
+        ],
+      )),
     );
   }
 }
